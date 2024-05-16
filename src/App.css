@@ -16,19 +16,76 @@ body {
 }
 
 .container {
-  height: 350px;
+  height: auto;
   width: 300px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
   background-color: #fff;
   border-radius: 15px;
-  border: 1px solid #000;
 }
 
 .display {
-  background-color: aqua;
+  background-color: #00bcbc;
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.display > h1 {
+  color: #fff;
+  margin-right: 10px;
+}
+
+.buttons {
+  height: 75%;
+  width: 100%;
+  padding: 10px;
+}
+
+.operations {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.numbers {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #00bcbc;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.operations > button {
+  flex: 1 0 55px;
+  height: 50px;
+}
+
+.numbers > button {
+  flex: 1 0 80px;
+  height: 50px;
+}
+
+#btn_result {
+  background-color: #00bcbc;
+  color: #fff;
   width: 100%;
   height: 50px;
+  border-radius: 15px;
+}
+
+#clear_operation {
+  color: #ff0000;
 }
